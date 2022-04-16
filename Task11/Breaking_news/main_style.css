@@ -14,7 +14,7 @@ h1 {
 
 .menu {
     background-color: black;
-    padding: 15px 5px;
+    padding: 5px;
     width: 200px;
 }
 
@@ -65,6 +65,7 @@ figcaption {
     font-weight: bold;
     text-align: center;
     display: block;
+    margin: 15px;
 }
 
 .container {
