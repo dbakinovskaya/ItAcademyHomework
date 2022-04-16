@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px 0px;
+    min-width: 100%;   
+}
+
+.menu {
+    background-color: lightyellow;
+    padding: 1px 10px 10px 1px;
+    width: 200px;
+}
+
+.menu h2 {
+    margin: 5px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 25px; 
+}
+
+figure {
+    float: left;
+    margin: 0px 10px 0px 0px;  
+}
+
+.block h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.block {
+    background-image: url(images/f-ball.png);
+    background-repeat: repeat-y;
+    background-size: 60px;
+    background-position: right;
+    padding: 1px 1px 1px 10px;
+    width: calc(100% - 200px);
+}
