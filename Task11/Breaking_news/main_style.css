@@ -70,3 +70,28 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    header {
+        order: 1;
+    }
+    
+    .content {
+        order: 2;
+        width: 100%;
+    }
+
+    .menu {
+        order: 3;
+        width: 50%;
+    }
+
+    aside {
+        order: 4;
+        width: 50%;
+    }
+
+    footer {
+        order: 5;
+    }
+}
