@@ -52,3 +52,41 @@ p {
     padding: 1px 1px 1px 10px;
     width: calc(100% - 200px);
 }
+
+@media screen and (max-width: 432px) {
+    header, footer {
+        display: none;  
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        min-width: 230px;  
+    }
+    .block {
+        background-image:none;
+        padding: 0 15px;
+        width: 100%;
+    }
+    figure {
+        float: none;
+        margin: 0px auto;
+        display:block;
+        width: max-content;  
+    }
+    p {
+        text-align: justify;
+        padding-right: 0px;
+    }
+    .menu {
+        background-color: white;
+        padding: 0 15px;
+        width: 100%;
+    }
+    li {
+        list-style-type: none; 
+        display:inline;
+    }
+    ul {
+        padding: 0;
+    }
+}
