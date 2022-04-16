@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: lightgray;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu {
+    background-color: black;
+    padding: 15px 5px;
+    width: 200px;
+}
+
+a {
+    color: lightblue;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+a:hover {
+    color: black;
+    background-color: lightblue;
+}
+
+.content {
+    background-color: lightblue;
+    padding: 5px;
+    width: calc(100% - 482px);
+}
+
+.content p {
+    font-weight: bold;
+    text-align: justify;
+}
+
+aside {
+    background-color: black;
+    padding: 1px;
+    width: 282px;
+}
+
+figure {
+    margin: 15px;
+}
+
+img {
+    width: 250px;
+}
+
+figcaption {
+    color: lightblue;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
