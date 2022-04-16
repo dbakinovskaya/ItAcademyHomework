@@ -52,6 +52,8 @@ aside {
 
 figure {
     margin: 15px;
+    width: max-content;
+    margin: 10px auto;
 }
 
 img {
@@ -89,6 +91,31 @@ figcaption {
     aside {
         order: 4;
         width: 50%;
+    }
+
+    footer {
+        order: 5; 
+    }
+}
+
+@media (max-width: 599px) {
+    header {
+        order: 1;
+    }
+    
+    .content {
+        order: 2;
+        width: 100%;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+    }
+
+    aside {
+        order: 4;
+        width: 100%;
     }
 
     footer {
