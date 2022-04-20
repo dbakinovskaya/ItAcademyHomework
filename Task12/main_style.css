@@ -1,3 +1,72 @@
 * {
     box-sizing: border-box;
 }
+
+.container {
+    min-width: 100%;
+    padding: 1px;
+}
+.block1 {
+    width: 100%;
+    padding: 5px;
+    min-height: 40px;
+    clear:both;
+}
+
+.logo {
+    width: 50%;
+    min-height: 40px;
+    font-size: 21px;
+    color: rgba(144, 244, 231, 1);
+    float: left;
+    padding: 5px 0px;
+}
+.logo p {
+    margin: 0px;
+}
+.authentification {
+    width: 50%; 
+    margin: 0px 0px 0px auto;
+    display: block;
+    min-height:40px;
+    padding: 5px 0px;
+}
+button {
+    display: block;
+    margin: 0px 0px 0px auto;
+    border: none;
+    height: 30px;
+    color: rgba(27, 97, 111, 1);
+    background-color:azure;
+}
+
+button:hover {
+    color: rgba(27, 97, 111, 1);
+    background-color:rgb(210, 248, 248);
+    transition: .15s;
+}
+
+button:first-of-type {
+    float: right;
+    border-left: 1px solid rgba(27, 97, 111, 1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button:last-of-type {
+    float: right;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header, footer {
+    background-color: rgba(27, 97, 111, 1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-weight: lighter;
+    margin: 0px;
+}
