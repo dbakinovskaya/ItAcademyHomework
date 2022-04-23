@@ -4,59 +4,51 @@
 
 .container {
     min-width: 100%;
-    padding: 1px;
 }
+
 .block1 {
     width: 100%;
-    padding: 5px;
-    min-height: 40px;
-    clear:both;
+    display: flex;   
 }
 
 .logo {
-    width: 50%;
-    min-height: 40px;
-    font-size: 21px;
-    color: rgba(144, 244, 231, 1);
-    float: left;
-    padding: 5px 0px;
+    width: 50%;  
 }
+
 .logo p {
-    margin: 0px;
+    margin: auto 0px;
+    font-size: 27px;
+    color: rgb(182, 233, 233);
 }
+
 .authentification {
-    width: 50%; 
-    margin: 0px 0px 0px auto;
-    display: block;
-    min-height:40px;
-    padding: 5px 0px;
+    width: 50%;    
+    text-align: right;
+    font-size: 0;
 }
+
 button {
-    display: block;
-    margin: 0px 0px 0px auto;
     border: none;
     height: 30px;
     color: rgba(27, 97, 111, 1);
-    background-color:azure;
+    background-color:rgb(182, 233, 233);
+    cursor: pointer;
 }
 
 button:hover {
-    color: rgba(27, 97, 111, 1);
-    background-color:rgb(210, 248, 248);
-    transition: .15s;
+    background-color:rgb(175, 226, 226);
+    transition: .2s;
 }
 
-button:first-of-type {
-    float: right;
-    border-left: 1px solid rgba(27, 97, 111, 1);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+button:first-of-type {    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 button:last-of-type {
-    float: right;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-left: 1px solid rgba(27, 97, 111, 1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
 }
 
 header, footer {
@@ -64,9 +56,110 @@ header, footer {
     color: white;
     text-align: center;
     padding: 10px;
+    margin: 10px auto;
 }
 
 h1 {
     font-weight: lighter;
     margin: 0px;
+}
+
+nav a {
+    width: 16.66%;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    background-color:rgb(182, 233, 233);
+    display: inline-block;
+    padding: 7px 0px;
+    text-align: center;
+    border-left: 1px solid white;    
+}
+
+a:first-of-type {    
+    border-left: none;
+}
+
+ nav {
+    width: 100%;
+    background-color:rgb(182, 233, 233);
+    font-size: 0;
+    padding: 5px;
+ }
+
+nav a:hover {
+    background-color:rgb(175, 226, 226);
+    transition: .2s;
+}
+
+aside {
+    max-width: 300px;
+}
+
+h2 {
+    color: rgb(24, 98, 112); 
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+}
+
+.banner {
+    background-image: url(images/bannerimg.jpg);
+    padding: 1px;
+    max-width: 250px;
+    position: relative;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.banner a {
+    text-decoration: none;
+    color: rgb(24, 98, 112); 
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    border: 2px solid rgb(24, 98, 112);
+    margin: 25px 0;
+    padding: 5px 20px; 
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(182, 233, 233, .7);
+}
+
+.one {
+    background-size: 350px;
+}
+
+.two {
+    background-size: 600px;
+    background-position: -250px -65px;
+
+}
+
+.two p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.three {
+    background-size: 250px;
+    background-position: center;
+}
+
+.four, .five {
+    position: static;
+    display: inline-block;
+    width: 120px;
+    margin: 0 5px 0 0;
+    padding: 10;
+    background-size: 250px;
+    background-position: 0px 130px;
+}
+
+.six {
+    background-size: 550px;
+    background-position: -10px -290px;
 }
