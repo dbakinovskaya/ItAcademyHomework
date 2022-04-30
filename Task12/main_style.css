@@ -1,30 +1,34 @@
 * {
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .container {
     min-width: 100%;
+    display: flex;
 }
 
 .block1 {
-    width: 100%;
-    display: flex;   
+    min-width: 100%; 
 }
 
 .logo {
-    width: 50%;  
+    width: 50%; 
+    float: left;
+    
 }
 
 .logo p {
-    margin: auto 0px;
+    margin: 5px;
     font-size: 27px;
     color: rgb(182, 233, 233);
 }
 
-.authentification {
-    width: 50%;    
+.authentification {   
+    margin: 5px; 
     text-align: right;
     font-size: 0;
+    float: right;
 }
 
 button {
@@ -56,7 +60,8 @@ header, footer {
     color: white;
     text-align: center;
     padding: 10px;
-    margin: 10px auto;
+    margin: 0;
+    min-width: 100%;
 }
 
 h1 {
@@ -85,6 +90,7 @@ a:first-of-type {
     background-color:rgb(182, 233, 233);
     font-size: 0;
     padding: 5px;
+    margin-top: 10px;
  }
 
 nav a:hover {
@@ -162,4 +168,18 @@ h2 {
 .six {
     background-size: 550px;
     background-position: -10px -290px;
+}
+
+section {
+   max-width:calc(100% - 254px);
+}
+
+.part1, .part3 {
+    background-color:rgb(182, 233, 233);
+    margin: 10px 0;
+}
+
+.part2 {
+    background-color:rgb(218, 240, 240);
+    margin: 10px 0;
 }
