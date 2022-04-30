@@ -109,11 +109,15 @@ h2 {
     margin: 0;
 }
 
+.two h2 {
+    max-width: 150px;
+    margin: 10px auto;
+}
+
 .banner {
     background-image: url(images/bannerimg.jpg);
     padding: 1px;
     max-width: 250px;
-    position: relative;
     padding: 20px;
     margin: 10px 0px;
 }
@@ -140,7 +144,6 @@ h2 {
 .two {
     background-size: 600px;
     background-position: -250px -65px;
-
 }
 
 .two p {
@@ -148,6 +151,8 @@ h2 {
     text-align: center;
     font-size: 12px;
     font-weight: bolder;
+    max-width: 210px;
+    margin: 0px auto;
 }
 
 .three {
@@ -156,7 +161,6 @@ h2 {
 }
 
 .four, .five {
-    position: static;
     display: inline-block;
     width: 120px;
     margin: 0 5px 0 0;
@@ -183,3 +187,44 @@ section {
     background-color:rgb(218, 240, 240);
     margin: 10px 0;
 }
+
+@media screen and (max-width: 563px) {
+    nav a {
+        width: 100%;
+        border: none;
+    }
+    section {
+        max-width:100%;
+        order: 1;
+    }
+    aside {
+        min-width: 100%;
+        order: 2;
+    }
+    .banner {
+        max-width: 100%;
+        background-size: 600px;
+        
+    }
+    .two {
+        background-size: 700px;
+        background-position: -170px -100px;
+    }
+    .four, .five {
+        width: calc(50% - 5px);
+        background-position: -20px -150px;
+        margin: 0px;
+    }
+    .four {
+        float: left;
+        margin-right: 10px;
+    }
+
+    footer {
+        order: 3;
+    }
+    .part3 {
+        margin-bottom: 0;
+    }
+}
+
